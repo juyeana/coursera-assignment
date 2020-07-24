@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+
+  background-color: rgb(229, 224, 240);
+  padding-bottom: 0px;
+  margin: 0;
+  border: none;
+
+}
+
+.navbar-header h1{
+  margin: 0;
+  padding: 10 0 0 10;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: rgb(37, 37, 37);
+}
+.navbar-header button.navbar-toggle{
+  border: 1px solid rgb(144, 144, 144);
+}
+
+#nav-list li{
+  border:1px solid rgb(173, 167, 184);
+  background-color: white;
+}
+
+#nav-list{
+  text-align: center;
+  font-weight: bold;
+  color:rgb(76, 76, 76);
+}
+#nav-list a:hover{
+  background-color: rgb(229, 224, 240);
+  
+}
+
+ #main-title p{
+  font-size:1.5em;
+  margin-top:15px;
+  font-weight: bold;
+}
+.main-content{
+  margin-top:20px;
+margin-bottom:20px;
+  padding:10px;
+  background-color: rgb(229, 224, 240);
+
+}  
+.main-content h4{
+  font-weight: bold;
+} 
+#menu-1, #menu-2, #menu-3{
+  background-color: rgb(229, 224, 240);
+}
+
+#main-body  h2{
+ font-size: 1.7em;
+ font-weight: bold; 
+}
+
+#main-body a{
+ 
+  text-decoration: none;
+}
+ 
+#main-body a:hover{
+ 
+  text-decoration: none;
+
+} 
+
+
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 767px) {
+  #main-body{
+    width:70%
+  }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width:768px) and (max-width: 991px) {
+  #main-body{
+    width:100%
+  }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #main-body{
+    width:100%
+  }
+}

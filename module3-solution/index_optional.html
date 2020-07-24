@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+  1. 3 mockups : desktop(md), tablet(sm), mobile(xs) with dropdown menu, 
+  2. navbar : 
+    1) scrolls away
+    2) company name: "Food, LLC", left aligned  
+    3) desktop & tablet : empty navbar
+    4) mobile: 
+      - menu button with 3 hr lines.
+      - a dropdown menu:
+          - appears by click with 3 items :Chicken, Beef, Sushi
+          - take up the entire width of the browser
+          - set background color
+    5) page heading: align center for "Our Menu" 
+  3. body:
+    1) use Bootstrap grid
+    2) take up the entire width of the brower - some margins
+    3) set the height of the browser to 1000px or put lots of dummy texts to scroll down the browser window
+    4) set background color
+    5) always use col-xs- class on any browser window size  
+
+    
+ -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Food, LLC</title>
+</head>
+
+<body>
+  <header>
+    <nav id="nav-top" class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand text-left" href="#">
+            <h1>Food, LLC</h1>
+          </a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li class="visible-xs">
+              <a href="#menu-1">Chicken</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#menu-2">Beef</a>
+            </li>
+            <li class="visible-xs">
+              <a href="#menu-3">Sushi</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main-body" class="container">
+    <div class="row">
+      <h2 class="text-center"> Our Menu</h2>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div id="menu-1">
+          <h3 class="text-center">Chicken</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation But I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasure</p>
+          <a class="text-right visible-xs" href="#nav-top">
+            <p>Back to Top</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div id="menu-2">
+          <h3 class="text-center">Beef</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation But I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasureBut I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasure But I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasure</p>
+          <a class="text-right  visible-xs" href="#nav-top">
+            <p>Back to Top</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <div id="menu-3">
+          <h3 class="text-center">Sushi</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitationBut I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasureBut I must explain to you how all
+            this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account
+            of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of
+            human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because
+            those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+            Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+            because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take
+            a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage
+            from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying
+            consequences, or one who avoids a pain that produces no resultant pleasure</p>
+          <a class="text-right  visible-xs" href="#nav-top">
+            <p>Back to Top</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
